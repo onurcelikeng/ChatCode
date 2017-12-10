@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DataContext-Web.config Connection String" description="DataContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:chatcodeapp.database.windows.net,1433;Initial Catalog=chatcodeappdb;Integrated Security=False;User Id=chatcode35@chatcodeapp.database.windows.net;Password=*chat35code;Encrypt=True;TrustServerCertificate=False;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\onurcelikeng\\Documents\\Visual\ Studio\ 2017\\Projects\\ChatCode\\ChatCode\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DataContext']/@connectionString" />
+  </parameter>
+</parameters>

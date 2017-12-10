@@ -1,0 +1,182 @@
+﻿@model int
+
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.success != null)
+{
+    <script>alert("Successfully. Your template published")</script>
+}
+@if (ViewBag.error != null)
+{
+    <script>alert("Opps. Unsuccessfully. Try again")</script>
+}
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">Add Template</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+        </div>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        @using (Html.BeginForm("New", "Developer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Types :</label>
+                        <select class="form-control select2" name="Types" style="width: 100%;">
+                            <option value="AboutMe" selected="selected">AboutMe</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Company">Company</option>
+                            <option value="Product">Product</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Style 1 :</label>
+                        <select class="form-control select2" name="Style1" style="width: 100%;">
+                            <option value="Music" selected="selected">Music</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Entertainig">Entertaining</option>
+                            <option value="Classic">Classsic</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Style 2 :</label>
+                        <select class="form-control select2" name="Style2" style="width: 100%;">
+                            <option value="Music">Music</option>
+                            <option value="Sport" selected="selected">Sport</option>
+                            <option value="Entertaining">Entertaining</option>
+                            <option value="Classic">Classsic</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <!-- /.col -->
+                <!-- /.col -->
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Please write something about template :</label>
+                        <textarea class="form-control" rows="5" name="Decsription" placeholder="Enter ..."></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Sex :</label>
+                            <select class="form-control select2" name="Sex" style="width: 100%;">
+                                <option selected="selected" value="Female">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Unisex">Unisex</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Price :</label>
+                            @if (Model < 5)
+                            {
+                                <input type="number" class="form-control" name="Price" id="inputEmail3" placeholder="0$" disabled value="0$">
+                            }
+                            else
+                            {
+                                <input type="number" class="form-control" name="Price" id="inputEmail3" placeholder="0$" >
+                            }
+
+                        </div>
+                    </div><br />
+                    <div class="row">
+                        <div class="col-md-12">
+                                
+                                    <label>Template Name:</label>
+                                    <input type="text" class="form-control" name="TemplateName" id="inputEmail3" placeholder="Name">
+                            
+                        </div>
+                        @*<div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Upload template screenshot:</label>
+                                    <input type="file" name="imge1" id="photo1" />
+                                    <input type="hidden" name="mainImage" id="images1" />
+                                    <img src="~/Areas/Admin/Content/ajax-loader.gif" id="loading1" />
+                                    <img src="" height="100" id="img1" />
+                                </div>
+                            </div>*@
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Source Code :</label>
+                        <textarea class="form-control" rows="5" name="SourceCode" placeholder="Enter ..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn bg-purple margin btn-block btn-lg">Publish</button>
+                </div>
+            </div>
+        <!-- /.row -->
+        }
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $('#loading1').hide();
+    $('#photo1').on("change", function () {
+        $('#loading1').show();
+        var formdata1 = new FormData($('form').get(0));
+
+        //var formdata = URL.createObjectURL(event.target.files[0]);
+        //var formdata = this.files[0];
+        CallServiceNumune1(formdata1);
+
+        //$('#formA input[type="file"]').val('');
+        //$("#fileInputNumune").val('');
+        //$("form").get(0).reset();
+    });
+
+    function CallServiceNumune1(file1) {
+
+        $.ajax({
+            url: '@Url.Action("Upload1", "ImageUpload")',
+            type: 'POST',
+            data: file1,
+            cache: false,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+
+                var reOne = response.urlOne;
+
+                document.getElementById("images1").value = reOne;
+
+                document.getElementById("img1").src = reOne;
+
+                $('#loading1').hide();
+
+            },
+            error: function () {
+                alert('Resim Yüklenemedi. Daha sonra tekrar deneyin!');
+                $('#loading1').hide();
+            }
+        });
+    }
+</script>

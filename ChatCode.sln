@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatCode", "ChatCode\ChatCode.csproj", "{F861649A-E9BB-4C87-B687-4AE2E1054409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatCode.DAL", "ChatCode.DAL\ChatCode.DAL.csproj", "{6C16DDBC-F0D2-421B-A202-731026DAC2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatCode.Bot", "ChatCode.Bot\ChatCode.Bot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatCode.Portal", "ChatCode.Portal\ChatCode.Portal.csproj", "{496780AE-B826-46F5-8639-5A9FEA113B38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F861649A-E9BB-4C87-B687-4AE2E1054409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F861649A-E9BB-4C87-B687-4AE2E1054409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F861649A-E9BB-4C87-B687-4AE2E1054409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F861649A-E9BB-4C87-B687-4AE2E1054409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C16DDBC-F0D2-421B-A202-731026DAC2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C16DDBC-F0D2-421B-A202-731026DAC2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C16DDBC-F0D2-421B-A202-731026DAC2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C16DDBC-F0D2-421B-A202-731026DAC2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496780AE-B826-46F5-8639-5A9FEA113B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496780AE-B826-46F5-8639-5A9FEA113B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496780AE-B826-46F5-8639-5A9FEA113B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496780AE-B826-46F5-8639-5A9FEA113B38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

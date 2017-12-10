@@ -1,0 +1,138 @@
+﻿@model ChatCode.DAL.Entities.Tables.Website
+@{
+    ViewBag.Title = "UpdateTemplate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@if (ViewBag.success != null)
+{
+    <script>alert("Successfully. Your template published")</script>
+}
+@if (ViewBag.error != null)
+{
+    <script>alert("Opps. Unsuccessfully. Try again")</script>
+}
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">Add Template</h3>
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+        </div>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+        @using (Html.BeginForm("UpdateTemplates", "Developer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+       
+            <input hidden type="number" name="Id" value="@Model.Id" />
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Types :</label>
+                        <select class="form-control select2" name="Types" style="width: 100%;">
+                            <option value="@Model.Types" selected="selected">@Model.Types</option>
+                            <option value="AboutMe">AboutMe</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Company">Company</option>
+                            <option value="Product">Product</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Style 1 :</label>
+                        <select class="form-control select2" name="Style1" style="width: 100%;">
+                            <option value="@Model.Style1" selected="selected">@Model.Style1</option>
+                            <option value="Music">Music</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Entertainig">Entertaining</option>
+                            <option value="Classic">Classsic</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Style 2 :</label>
+                        <select class="form-control select2" name="Style2" style="width: 100%;">
+                            <option value="@Model.Style2" selected="selected">@Model.Style2</option>
+                            <option value="Music">Music</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Entertaining">Entertaining</option>
+                            <option value="Classic">Classsic</option>
+                        </select>
+                    </div>
+                    <!-- /.form-group -->
+
+                </div>
+                <!-- /.col -->
+                <!-- /.col -->
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Please write something about template :</label>
+                        <textarea class="form-control" rows="5" name="Decsription" placeholder="">@Model.Decsription</textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Sex :</label>
+                            <select class="form-control select2" name="Sex" style="width: 100%;">
+                                <option selected="selected" value="@Model.Sex">@Model.Sex</option>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Unisex">Unisex</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Price :</label>
+                                <input type="number" class="form-control" name="Price" id="inputEmail3" disabled value="@Model.Price">
+                            
+
+                        </div>
+                    </div><br />
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <label>Template Name:</label>
+                            <input type="text" class="form-control" name="TemplateName" id="inputEmail3" value="@Model.TemplateName">
+
+                        </div>
+                        @*<div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Upload template screenshot:</label>
+                                    <input type="file" name="imge1" id="photo1" />
+                                    <input type="hidden" name="mainImage" id="images1" />
+                                    <img src="~/Areas/Admin/Content/ajax-loader.gif" id="loading1" />
+                                    <img src="" height="100" id="img1" />
+                                </div>
+                            </div>*@
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Source Code :</label>
+                        <textarea class="form-control" rows="5" name="SourceCode">@Model.SourceCode</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn bg-info margin btn-block btn-lg">Update</button>
+                </div>
+            </div>
+        <!-- /.row -->
+        }
+    </div>
+
+</div>h2>
+

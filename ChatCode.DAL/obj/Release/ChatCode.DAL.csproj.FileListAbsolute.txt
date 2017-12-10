@@ -1,0 +1,17 @@
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\ChatCode.DAL.dll.config
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\ChatCode.DAL.dll
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\ChatCode.DAL.pdb
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\EntityFramework.dll
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\EntityFramework.xml
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.Migrations.firstdbCreated.resources
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.Migrations.updated.resources
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.Migrations.updated1.resources
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.Migrations.updated2.resources
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.Migrations.updatedMig.resources
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.csproj.GenerateResource.Cache
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.dll
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.pdb
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.csprojResolveAssemblyReference.cache
+C:\Users\onurcelikeng\Documents\Visual Studio 2017\Projects\ChatCode\ChatCode.DAL\obj\Release\ChatCode.DAL.Migrations.deneme.resources
